@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
 import Posts from './pages/Posts';
+import MultistepForm from './pages/MultistepForm';
+import Seats from './pages/Seats';
 
 const Router = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<MultistepForm />} />
       <Route path="/posts" element={<Posts />} />
+      <Route path="/seats" element={<Seats />} />
     </Routes>
   </BrowserRouter>
 );
